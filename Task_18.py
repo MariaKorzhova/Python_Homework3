@@ -10,17 +10,16 @@
 #     -> 5
 
 N = int(input("Введите N - количество элементов в массиве: "))
-num_list = []
+A = []
 num = 1
-for i in range(1, N+1):
-    num_list.append(i)
-print(num_list)
+for i in range(N):
+    A.append(int(input("Введите элемент массива: ")))
+print(A)
 X = int(input("Введите число X: "))
-min = abs(X - num_list[0])
+min = abs(X - A[0])
 for i in range(1, N):
-    count = abs(X - num_list[i])
+    count = abs(X - A[i])
     if count < min:
         min = count
-        num = num_list[i]
-
+        num = A[i]
 print(f"Число {num} - самый близкий по величине элемент к заданному числу {X}")
