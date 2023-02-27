@@ -9,15 +9,15 @@
 #     3
 #     -> 1
 N = int(input("Введите N - количество элементов в массиве: "))
-num_list = []
+A = []
 counter = 0
-for i in range(1, N+1):
-    num_list.append(i)
-print(num_list)
+for i in range(N):
+    A.append(int(input("Введите элемент массива: ")))
+print(A)
 X = int(input("Введите число X: "))
-for a in range(len(num_list)):
-    if num_list[a] == X:
+for a in range(len(A)):
+    if A[a] == X:
         counter+=1
-print(f"Число {X} повторяется в списке {counter} раз")
+print(f"Число {X} повторяется в списке {counter} раз(а)")
 
 
